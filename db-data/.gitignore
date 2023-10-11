@@ -1,0 +1,4 @@
+postgres/**
+mongo/**
+portainer/**
+prometheus/**

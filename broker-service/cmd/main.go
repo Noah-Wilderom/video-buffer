@@ -33,6 +33,7 @@ func main() {
 	app.Echo.Use(middleware.CORSWithConfig(middleware.CORSConfig{
 		AllowOrigins: []string{"https://**", "https://**"},
 		AllowHeaders: []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
+		AllowMethods: []string{"GET", "POST", "PUT", "DELETE"},
 	}))
 
 	app.routes()

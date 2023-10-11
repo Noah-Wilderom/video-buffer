@@ -2,3 +2,4 @@ postgres/**
 mongo/**
 portainer/**
 prometheus/**
+grafana/**

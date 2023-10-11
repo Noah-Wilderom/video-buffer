@@ -2,6 +2,7 @@ package models
 
 import (
 	"database/sql"
+	dbhelper "github.com/Noah-Wilderom/video-buffer/shared/helpers/db"
 	"time"
 )
 
@@ -20,5 +21,5 @@ type (
 )
 
 func (c *UserConn) Create() {
-	//
+	id, err := dbhelper.Insert(c.DB)
 }
